@@ -143,6 +143,7 @@ pub enum CursorShape {
     Block,
     Underline,
     Beam,
+    HollowBlock
 }
 
 impl From<CursorShape> for VteCursorShape {
@@ -151,6 +152,7 @@ impl From<CursorShape> for VteCursorShape {
             CursorShape::Block => VteCursorShape::Block,
             CursorShape::Underline => VteCursorShape::Underline,
             CursorShape::Beam => VteCursorShape::Beam,
+            CursorShape::HollowBlock => VteCursorShape::HollowBlock
         }
     }
 }
